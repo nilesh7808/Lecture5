@@ -1,0 +1,62 @@
+article {
+    width: 75vw;
+    border: 1px solid #ccc;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+@media screen and (max-width: 736px) {
+    p {
+        color: red;
+    }
+    h1 {
+        color: green;
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    p {
+        color: blue;
+    }
+    h1 {
+        color: palevioletred;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    p {
+        color: green;
+    }
+    h1 {
+        color: paleturquoise;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    h1 {
+        color: rgb(78, 165, 247);
+        background-color: antiquewhite;
+        font-size: 3.5rem;
+    }
+}
+
+@media (orientation: portrait),
+(max-width: 1000px) {
+    h1 {
+        color: red;
+        background-color: palegreen;
+        text-transform: uppercase;
+    }
+    h1:hover {
+        color: blue;
+        cursor: pointer;
+        background-color: bisque;
+    }
+}

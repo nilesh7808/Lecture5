@@ -1,0 +1,22 @@
+div {
+    border: 3px solid black;
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 900ms;
+    transition-timing-function: ease-in-out; */
+    /* We can use short-hand property for transition */
+    /* transition: transition-property transition-duration transition-delay transition-timing-function; */
+    transition: border-radius 2s ease-in;
+    /* You can use multiple property in a single shorthand transitions */
+    /* transition: border-radius 2s 500ms ease-in, background-color 2s ease-out; */
+}
+
+div:hover {
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
