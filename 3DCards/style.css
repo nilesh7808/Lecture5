@@ -1,0 +1,43 @@
+div {
+    height: 300px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+section {
+    perspective: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.side-a,
+.side-b {
+    position: absolute;
+    backface-visibility: hidden;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-a {
+    background-color: palevioletred;
+    z-index: 1;
+}
+
+.side-b {
+    background-color: lightseagreen;
+    transform: rotateY(180deg);
+}
+
+.wrap {
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.wrap:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
